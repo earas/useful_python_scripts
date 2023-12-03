@@ -1,4 +1,4 @@
-# Python Brute Force Password Cracker
+# 1) Python Brute Force Password Cracker
 
 This Python script is a brute force password cracker that uses multiprocessing to attempt to find a password based on a given hash. It's designed to be a simple demonstration of brute force techniques in Python, specifically targeting password hashes commonly found in the `/etc/shadow` file on Linux systems.
 
@@ -69,5 +69,71 @@ The encrypted password segment starts with an algorithm identifier, which is ind
 
 ### Disclaimer
 This script is for educational purposes only. Unauthorized password cracking or hacking is illegal and unethical.
+
+
+# 2) Python Port Check Script
+
+This script is designed to efficiently check for open network ports across multiple subnets using Python's multiprocessing capabilities. It's a practical tool for network administrators and security professionals to quickly assess network security and open ports.
+
+## Features
+
+- Checks multiple subnets for open ports.
+- Uses threading for enhanced performance.
+- Option to display only open ports for cleaner output.
+- Handles timeouts and socket errors gracefully.
+- Customizable through command-line arguments.
+
+## Requirements
+
+- Python 3.x
+- Standard libraries: `sys`, `socket`, `ipaddress`, `threading`, `contextlib`
+
+## Usage
+
+To use the script, you need to specify the port you want to check. You can also optionally specify to only display open ports.
+
+```bash
+python port-check.py <port> [only_open]
+```
+
+- `<port>`: Required. The port number you want to check across the specified subnets.
+- `[only_open]`: Optional. Include this argument to display only open ports.
+
+
+### Example Commands
+
+- To check both open and closed ports on port 80:
+```bash
+python port-check.py 80
+```
+
+- To check only open ports on port 80:
+```bash
+python port-check.py 80 only_open
+```
+
+## How It Works
+
+The script iterates through predefined IP subnets, utilizing threading to check each IP within those subnets for the specified port's status. By default, it checks for both open and closed ports but can be configured to report only open ports.
+
+## Customization
+
+To customize the IP subnets checked, edit the `ip_networks` list in the script:
+
+```python
+ip_networks = [
+ "192.168.1.0/24",
+ "10.0.0.0/24",
+ "172.16.0.0/24",
+ "192.168.2.0/24",
+ "10.0.1.0/24"
+]
+```
+### Disclaimer
+This script is intended for educational and legitimate professional use only. Unauthorized network scanning and port checking can be considered intrusive and illegal in many contexts. Always ensure you have explicit permission to scan the network in question.
+
+
+
+
 
 
