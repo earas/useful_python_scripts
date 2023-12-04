@@ -1,4 +1,4 @@
-# 1) Python Brute Force Password Cracker
+# 1) Brute Force Linux Password
 
 This Python script is a brute force password cracker that uses multiprocessing to attempt to find a password based on a given hash. It's designed to be a simple demonstration of brute force techniques in Python, specifically targeting password hashes commonly found in the `/etc/shadow` file on Linux systems.
 
