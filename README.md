@@ -134,6 +134,40 @@ This script is intended for educational and legitimate professional use only. Un
 
 
 
+# 3) IP Address Finder
+
+This Python script is designed for extracting IP addresses from a text file. It's ideal for network administrators, security professionals, or anyone who needs to quickly and efficiently identify IP addresses in a document.
+
+## Description
+
+The script uses regular expressions to find and extract all occurrences of IP addresses from a given text file. It is efficient and easy to use, suitable for processing logs, network configurations, and other text files where IP addresses are listed.
+
+## Getting Started
+
+### Dependencies
+
+- Python 3.x
+- No external libraries are required.
+
+
+## Features
+
+- Extract IP addresses from any text file.
+- Handles multiple IP addresses per line.
+- Provides clear error messages for file not found or other issues.
+
+
+### Using the Script
+
+To use the script, simply run it with Python and pass the path of the text file as an argument:
+
+
+```bash
+python ip_finder.py
+```
+
+
+
 
 
 
