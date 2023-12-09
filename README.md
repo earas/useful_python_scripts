@@ -187,7 +187,7 @@ The script utilizes multithreading to efficiently scan multiple ports on each IP
 Run the script with Python and follow the prompts to enter the subnet and port range:
 
 ```bash
-python scanport-range.py
+python scan-port-range.py
 ```
 
 
