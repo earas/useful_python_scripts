@@ -167,6 +167,50 @@ python ip_finder.py
 ```
 
 
+4) # Port Range Scanner
+
+A Python script for scanning a range of ports on all IP addresses within a given subnet. This tool is useful for network administrators and security professionals to identify open ports across multiple hosts.
+
+## Description
+
+The script utilizes multithreading to efficiently scan multiple ports on each IP address in a specified subnet. It reports the open ports for each IP address, aiding in network diagnostics and security audits.
+
+## Getting Started
+
+### Dependencies
+
+- Python 3.x
+- Standard libraries: `socket`, `ipaddress`, `threading`, `queue`
+
+
+### Using the Script
+
+Run the script with Python and follow the prompts to enter the subnet and port range:
+
+```bash
+python scanport-range.py
+```
+
+
+You will be asked to enter:
+- Subnet to scan (e.g., `192.168.1.0/24`)
+- Start port number
+- End port number
+
+The script will then scan the specified range and output the open ports for each IP address in the subnet.
+
+## Features
+
+- Scans all IPs within a specified subnet.
+- Checks a specified range of ports for each IP.
+- Utilizes multithreading for faster scanning.
+- Reports open ports for each IP address.
+
+
+
+
+
+
 
 
 
