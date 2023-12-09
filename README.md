@@ -166,8 +166,7 @@ To use the script, simply run it with Python and pass the path of the text file 
 python ip_finder.py
 ```
 
-
-4) # Port Range Scanner
+# 4) Port Range Scanner
 
 A Python script for scanning a range of ports on all IP addresses within a given subnet. This tool is useful for network administrators and security professionals to identify open ports across multiple hosts.
 
